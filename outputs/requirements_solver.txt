@@ -1,0 +1,2 @@
+# Optional large-level fallback; the DFS solver and validator use only the standard library.
+ortools==9.15.6755
