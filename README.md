@@ -1,40 +1,57 @@
 # Dolmenjord solver
 
-Dolmenjord 布局求解器：从本地游戏安装目录提取棋盘与物件，使用房屋摆放搜索和道路精确覆盖求解，再独立验证并生成 HTML / SVG 可视化。
+从本地游戏安装目录提取棋盘，求解房屋与道路布局，独立验证并生成可视化。已完成全部 **60 关**的离线求解，尚未自动回放到游戏。
 
-已在本地完成全部 60 关的离线求解与校验。1–59 关使用两阶段搜索，第 60 关使用 OR-Tools CP-SAT 后备模型；尚未自动回放到游戏中。
+## 目录
 
-## 安装与运行
+```text
+src/                   Python 源码与统一路径配置
+requirements/          提取与求解依赖
+data/levels/          导出的关卡、形状、库存与规则
+data/solutions/       已验证解、摆放坐标与搜索统计
+doc/algorithm.md      算法原理与验证方法
+doc/timings.md        每关耗时与讨论
+doc/layouts/          HTML 总览、60 张 SVG 与索引
+doc/validation_report.json   独立校验报告
+```
 
-使用 Python 3.11 或更高版本，在仓库目录执行：
+## 查看结果
+
+- [文档入口](doc/README.md)
+- [算法原理](doc/algorithm.md)
+- [逐关耗时](doc/timings.md)
+- [60 关布局索引](doc/layouts/README.md)：GitHub 可直接查看 SVG。
+- 下载后用浏览器打开 `doc/layouts/solutions.html`，可以切换房屋视图、查看坐标与搜索统计。
+
+## 运行
+
+Python 3.11 或更高版本，在仓库根目录执行：
 
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
-python -m pip install -r outputs/requirements_export.txt -r outputs/requirements_solver.txt
-cd outputs
-python export_dolmenjord_levels.py "F:\software\steam\steamapps\common\Dolmenjord" dolmenjord_levels.json
-python solve_dolmenjord.py --levels 60 --timeout 180 --constraint-fallback --resume
-python validate_solutions.py
-python render_solutions.py
+python -m pip install -r requirements/solver.txt
+python src/solve_dolmenjord.py --levels 60 --timeout 180 --constraint-fallback --resume
+python src/validate_solutions.py
+python src/render_solutions.py
+python src/report_timings.py
 ```
 
-请将示例游戏路径替换为自己的安装目录。提取器针对 Unity 2021.3.24f1 的当前游戏资源布局；其他游戏版本可能需要调整。
+仓库已包含关卡输入和 60 关解。`--resume` 校验并复用已有解；去掉它会重新搜索。快速重新测试可使用独立输出，避免覆盖全部结果：
 
-先验证少量关卡时，可将 `--levels 60` 改成 `--levels 10`。超时关卡可再次运行并复用已有合法解；不同机器上的搜索耗时可能不同。
+```powershell
+python src/solve_dolmenjord.py --levels 10 --output work/smoke_solutions.json
+```
 
-完成后打开 `outputs/solutions.html`。结构化结果写入 `outputs/solutions.json`，每关 SVG 位于 `outputs/level_images/`。
+默认数据和文档路径根据源码位置解析，不依赖当前工作目录。求解器可通过 `--input`、`--output` 覆盖默认路径；相对参数路径按当前工作目录解析。
 
-## 源码
+## 重新提取
 
-| 文件 | 用途 |
-| --- | --- |
-| `outputs/export_dolmenjord_levels.py` | 提取关卡棋盘、形状、库存与连接规则 |
-| `outputs/solve_dolmenjord.py` | 房屋 DFS、剪枝、道路精确覆盖 |
-| `outputs/solve_constraint.py` | CP-SAT 后备求解器 |
-| `outputs/validate_solutions.py` | 独立验证、几何交叉检查、错误注入检查 |
-| `outputs/render_solutions.py` | 生成 HTML 与 SVG |
+```powershell
+python -m pip install -r requirements/export.txt
+python src/export_dolmenjord_levels.py "F:\software\steam\steamapps\common\Dolmenjord"
+```
 
-算法、坐标与规则详见 [求解器说明](outputs/README_solver.md)。求解过程不使用原始建筑摆放作为提示。
+替换为自己的安装目录，默认写入 `data/levels/dolmenjord_levels.json`；可传第二个位置参数指定输出。提取器针对 Unity 2021.3.24f1 的已检查资源布局，其他游戏版本可能需要调整。
 
-仓库包含源代码；游戏文件、提取的关卡数据、生成的解与图片由上述命令在本地生成。
+源码、关卡快照、已验证解和文档均由 Git 管理。仓库不包含游戏可执行文件、DLL 或原始资源包。`work/`、虚拟环境和旧 `outputs/` 预览不提交。

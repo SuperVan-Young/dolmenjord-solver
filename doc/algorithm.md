@@ -4,31 +4,36 @@
 
 ## 查看结果
 
-- `solutions.html`：自包含页面，可直接双击打开；支持完整布局、只显示房屋、坐标表。
-- `level_images/level_01.svg` 至 `level_60.svg`：每关单独矢量图。
-- `solutions.json`：物件名称、锚点 `[x,z]`、旋转、搜索统计及校验结果。
-- `validation_report.json`：独立验证、资源几何交叉检查和错误注入测试结果。
+- `doc/layouts/solutions.html`：自包含页面，可直接双击打开；支持完整布局、只显示房屋、坐标表。
+- `doc/layouts/level_images/level_01.svg` 至 `level_60.svg`：每关单独矢量图。
+- `data/solutions/solutions.json`：物件名称、锚点 `[x,z]`、旋转、搜索统计及校验结果。
+- `doc/validation_report.json`：独立验证、资源几何交叉检查和错误注入测试结果。
+
+逐关成功尝试耗时及限制见 [耗时分析](timings.md)，每关图见 [布局索引](layouts/README.md)。
 
 ## 运行
+
+以下命令从仓库根目录执行。
 
 两阶段求解器、验证、绘图只依赖 Python 标准库；第 60 关的后备求解器依赖 OR-Tools。首次使用请按仓库根目录 README 提取游戏数据；本地已有导出数据时，不需再次读取游戏。
 
 ```powershell
-pip install -r requirements_solver.txt
-python solve_dolmenjord.py --levels 60 --timeout 180 --constraint-fallback --resume
-python validate_solutions.py
-python render_solutions.py
+python -m pip install -r requirements/solver.txt
+python src/solve_dolmenjord.py --levels 60 --timeout 180 --constraint-fallback --resume
+python src/validate_solutions.py
+python src/render_solutions.py
+python src/report_timings.py
 ```
 
 `--timeout` 是每次尝试的搜索超时秒数。`--resume` 会独立校验并复用已有解；删除该参数可重新搜索。超时后默认切换候选顺序最多 3 次，可用 `--restarts` 修改；`--strategy 1` 从边界优先顺序开始。失败状态区分 `timeout`、CP-SAT 的 `UNKNOWN` 和搜索空间穷尽的 `unsatisfiable`。当前每关只输出第一个合法解。各结果的 `seconds` 是成功那次尝试的耗时，不包括此前失败尝试。
 
-只重新计算第 60 关可运行 `python solve_constraint.py`。结果写入 `level60_constraint.json`，完整已验证结果仍在 `solutions.json`。
+只重新计算第 60 关可运行 `python src/solve_constraint.py`。结果写入 `data/solutions/level60_constraint.json`，完整已验证结果仍在 `data/solutions/solutions.json`。
 
 第 60 关有 395 个格子、83 个物件和 8 个独立地图区域。后备模型对每种合法摆放建立布尔变量，约束每格恰好覆盖一次、物件数量、全部门口铺路；对各区域中的道路格建立递减层级，保证沿道路能回到起点。模型先验证每个区域内的起点属于同一个必需连接组，再将这组归为一个根；其他地图可使用通用流量连通约束。该关本次成功尝试约 74.9 秒。没有使用原始摆放或原始分区物件数量作为提示。
 
 ## 输入与坐标
 
-`dolmenjord_levels.json` 现已补齐 catalog 中每种物件的 `cells`、`fronts` 和类型，以及起点的世界网格坐标。求解器使用棋盘、形状、物件数量和起点连接要求；不使用资源中的原始建筑位置作为搜索提示。
+`data/levels/dolmenjord_levels.json` 现已补齐 catalog 中每种物件的 `cells`、`fronts` 和类型，以及起点的世界网格坐标。求解器使用棋盘、形状、物件数量和起点连接要求；不使用资源中的原始建筑位置作为搜索提示。
 
 `anchor` 是建筑根 Transform 在 XZ 平面的坐标。`rotation` 为 0/1/2/3，对应 Unity 绕 Y 轴 0/90/180/270 度，变换为 `(x,z) → (z,-x)`。不允许镜像。高度使用关卡的 `gridWorldHeight`。
 

@@ -2,6 +2,7 @@
 Install: pip install ortools
 Run: python solve_constraint.py
 """
+from project_paths import LEVELS, SOLUTIONS
 import json,time
 from pathlib import Path
 from collections import defaultdict
@@ -98,6 +99,6 @@ def solve_constraint(level,catalog,timeout=180,depth=False):
             'placements':selected,'validation':check,'stats':{'branches':solver.num_branches,'conflicts':solver.num_conflicts,'candidatePlacements':len(placements)}}
 
 if __name__=='__main__':
-    root=Path(__file__).parent;data=json.loads((root/'dolmenjord_levels.json').read_text(encoding='utf8'))
+    SOLUTIONS.parent.mkdir(parents=True,exist_ok=True);data=json.loads(LEVELS.read_text(encoding='utf8'))
     result=solve_constraint(data['levels'][59],{c['name']:c for c in data['catalog']},180,depth=True)
-    (root/'level60_constraint.json').write_text(json.dumps(result,indent=2),encoding='utf8');print(result['status'],result['seconds'],result['stats'])
+    (SOLUTIONS.parent/'level60_constraint.json').write_text(json.dumps(result,indent=2),encoding='utf8');print(result['status'],result['seconds'],result['stats'])

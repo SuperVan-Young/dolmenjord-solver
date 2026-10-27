@@ -1,6 +1,7 @@
 """Two-stage macro placement / road exact-cover solver. Python standard library only.
 Run: python solve_dolmenjord.py --levels 10
 """
+from project_paths import LEVELS, SOLUTIONS
 import argparse
 import json
 import time
@@ -190,9 +191,9 @@ def main():
     parser.add_argument('--restarts',type=int,default=3,help='Extra candidate-order attempts after timeout')
     parser.add_argument('--resume',action='store_true',help='Reuse existing solutions after independent verification')
     parser.add_argument('--constraint-fallback',action='store_true',help='Use optional OR-Tools model after DFS timeouts')
-    parser.add_argument('--input',type=Path,default=Path(__file__).with_name('dolmenjord_levels.json'))
-    parser.add_argument('--output',type=Path,default=Path(__file__).with_name('solutions.json'))
-    args=parser.parse_args();data=json.loads(args.input.read_text(encoding='utf8'))
+    parser.add_argument('--input',type=Path,default=LEVELS)
+    parser.add_argument('--output',type=Path,default=SOLUTIONS)
+    args=parser.parse_args();args.output.parent.mkdir(parents=True,exist_ok=True);data=json.loads(args.input.read_text(encoding='utf8'))
     catalog={x['name']:x for x in data['catalog']};results=[];previous={}
     if args.resume and args.output.exists():
         previous={r['level']:r for r in json.loads(args.output.read_text(encoding='utf8'))['results']}

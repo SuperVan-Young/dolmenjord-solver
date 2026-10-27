@@ -1,12 +1,13 @@
 """Validate solutions, extraction/rotation against source geometry, and rejection cases."""
+from project_paths import LEVELS, SOLUTIONS, DOC, VALIDATION
 import json
 import math
 from pathlib import Path
 from solve_dolmenjord import geometry, verify
 
-root=Path(__file__).parent
-data=json.loads((root/'dolmenjord_levels.json').read_text(encoding='utf8'))
-solutions=json.loads((root/'solutions.json').read_text(encoding='utf8'))
+DOC.mkdir(parents=True,exist_ok=True)
+data=json.loads(LEVELS.read_text(encoding='utf8'))
+solutions=json.loads(SOLUTIONS.read_text(encoding='utf8'))
 catalog={c['name']:c for c in data['catalog']}
 report={'solutions':[],'sourceFootprintsChecked':0,'rejectedMutations':[]}
 for result in solutions['results']:
@@ -49,5 +50,5 @@ fixture['startPoints'][0]['pointNeedConnect']=[]
 assert 'road piece disconnected from all starts' in verify(fixture,catalog,placements)['errors']
 report['connectivityFixtures']={'separate_networks_with_own_starts':'accepted',
     'required_pair_disconnected':'rejected','road_network_without_start':'rejected'}
-(root/'validation_report.json').write_text(json.dumps(report,indent=2),encoding='utf8')
+VALIDATION.write_text(json.dumps(report,indent=2),encoding='utf8')
 print(f"Validated {len(report['solutions'])} solutions; matched {report['sourceFootprintsChecked']} source footprints; rejected {len(report['rejectedMutations'])} mutations.")

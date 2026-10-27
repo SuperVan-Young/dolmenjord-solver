@@ -6,6 +6,8 @@ Run: python export_dolmenjord_levels.py "F:\\software\\steam\\steamapps\\common\
 The game generates grids at runtime from each Building.colliders transform.
 This exporter reconstructs those positions from serialized transforms.
 """
+from project_paths import LEVELS
+
 import json
 import sys
 from collections import Counter
@@ -249,6 +251,6 @@ def main(game_dir: Path, target: Path):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 3:
-        raise SystemExit("Usage: python export_dolmenjord_levels.py GAME_DIR OUTPUT_JSON")
-    main(Path(sys.argv[1]), Path(sys.argv[2]))
+    if len(sys.argv) not in (2, 3):
+        raise SystemExit("Usage: python export_dolmenjord_levels.py GAME_DIR [OUTPUT_JSON]")
+    main(Path(sys.argv[1]), Path(sys.argv[2]) if len(sys.argv) == 3 else LEVELS)

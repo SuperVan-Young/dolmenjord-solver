@@ -1,0 +1,2154 @@
+{
+  "solutions": [
+    {
+      "level": 1,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 3,
+      "roadCells": 2,
+      "doorCells": 1,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 2,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 4,
+      "roadCells": 2,
+      "doorCells": 1,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 3,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 10,
+      "roadCells": 4,
+      "doorCells": 4,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 4,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 18,
+      "roadCells": 7,
+      "doorCells": 6,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 5,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 25,
+      "roadCells": 12,
+      "doorCells": 7,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 6,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 19,
+      "roadCells": 7,
+      "doorCells": 7,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 7,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 17,
+      "roadCells": 9,
+      "doorCells": 5,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 8,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 28,
+      "roadCells": 14,
+      "doorCells": 9,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 9,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 32,
+      "roadCells": 16,
+      "doorCells": 9,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 10,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 38,
+      "roadCells": 11,
+      "doorCells": 9,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 11,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 34,
+      "roadCells": 10,
+      "doorCells": 8,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 12,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 34,
+      "roadCells": 15,
+      "doorCells": 7,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 13,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 34,
+      "roadCells": 13,
+      "doorCells": 8,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 14,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 32,
+      "roadCells": 14,
+      "doorCells": 7,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 15,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 31,
+      "roadCells": 14,
+      "doorCells": 10,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 16,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 33,
+      "roadCells": 15,
+      "doorCells": 7,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 17,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 43,
+      "roadCells": 17,
+      "doorCells": 8,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 18,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 64,
+      "roadCells": 27,
+      "doorCells": 14,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 19,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 50,
+      "roadCells": 16,
+      "doorCells": 12,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 20,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 47,
+      "roadCells": 13,
+      "doorCells": 12,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 21,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 55,
+      "roadCells": 16,
+      "doorCells": 14,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 22,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 62,
+      "roadCells": 22,
+      "doorCells": 13,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 23,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 75,
+      "roadCells": 30,
+      "doorCells": 12,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 24,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 92,
+      "roadCells": 32,
+      "doorCells": 13,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 25,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 55,
+      "roadCells": 15,
+      "doorCells": 12,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 26,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 43,
+      "roadCells": 9,
+      "doorCells": 8,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 27,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 63,
+      "roadCells": 15,
+      "doorCells": 11,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 28,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 66,
+      "roadCells": 18,
+      "doorCells": 15,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 29,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 85,
+      "roadCells": 20,
+      "doorCells": 16,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 30,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 69,
+      "roadCells": 19,
+      "doorCells": 16,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 31,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 70,
+      "roadCells": 14,
+      "doorCells": 12,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 32,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 70,
+      "roadCells": 20,
+      "doorCells": 16,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 33,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 71,
+      "roadCells": 31,
+      "doorCells": 14,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 34,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 93,
+      "roadCells": 24,
+      "doorCells": 17,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 35,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 90,
+      "roadCells": 24,
+      "doorCells": 20,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 36,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 72,
+      "roadCells": 20,
+      "doorCells": 16,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 37,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 82,
+      "roadCells": 34,
+      "doorCells": 18,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 38,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 64,
+      "roadCells": 27,
+      "doorCells": 14,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 39,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 84,
+      "roadCells": 26,
+      "doorCells": 17,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 40,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 82,
+      "roadCells": 32,
+      "doorCells": 18,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 41,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 93,
+      "roadCells": 34,
+      "doorCells": 20,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 42,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 92,
+      "roadCells": 26,
+      "doorCells": 19,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 43,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 93,
+      "roadCells": 29,
+      "doorCells": 20,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 44,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 82,
+      "roadCells": 17,
+      "doorCells": 15,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 45,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 77,
+      "roadCells": 22,
+      "doorCells": 19,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 46,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 88,
+      "roadCells": 36,
+      "doorCells": 16,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 47,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 78,
+      "roadCells": 31,
+      "doorCells": 17,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 48,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 103,
+      "roadCells": 37,
+      "doorCells": 26,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 49,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 111,
+      "roadCells": 26,
+      "doorCells": 22,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 50,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 110,
+      "roadCells": 33,
+      "doorCells": 20,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 51,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 128,
+      "roadCells": 52,
+      "doorCells": 22,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 52,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 161,
+      "roadCells": 41,
+      "doorCells": 35,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 53,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 104,
+      "roadCells": 38,
+      "doorCells": 27,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 54,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 145,
+      "roadCells": 60,
+      "doorCells": 26,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 55,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 160,
+      "roadCells": 53,
+      "doorCells": 29,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 56,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 153,
+      "roadCells": 46,
+      "doorCells": 34,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 57,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 167,
+      "roadCells": 47,
+      "doorCells": 32,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 58,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 181,
+      "roadCells": 64,
+      "doorCells": 30,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 59,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 179,
+      "roadCells": 64,
+      "doorCells": 38,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    },
+    {
+      "level": 60,
+      "valid": true,
+      "errors": [],
+      "coveredCells": 395,
+      "roadCells": 155,
+      "doorCells": 72,
+      "checks": [
+        "inventory",
+        "bounds",
+        "overlap",
+        "full coverage",
+        "all fronts on road",
+        "road components reach a start",
+        "required start connections"
+      ]
+    }
+  ],
+  "sourceFootprintsChecked": 1051,
+  "rejectedMutations": [
+    {
+      "level": 1,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 1,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 2,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 2,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 3,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 3,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 4,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 4,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 5,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road",
+        "road piece disconnected from all starts"
+      ]
+    },
+    {
+      "level": 5,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 6,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 6,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 7,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 7,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 8,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 8,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 9,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road",
+        "road piece disconnected from all starts"
+      ]
+    },
+    {
+      "level": 9,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 10,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road",
+        "required start connection missing"
+      ]
+    },
+    {
+      "level": 10,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 11,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road",
+        "road piece disconnected from all starts"
+      ]
+    },
+    {
+      "level": 11,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 12,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road",
+        "road piece disconnected from all starts"
+      ]
+    },
+    {
+      "level": 12,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 13,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 13,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 14,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 14,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 15,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 15,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 16,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road",
+        "road piece disconnected from all starts",
+        "required start connection missing"
+      ]
+    },
+    {
+      "level": 16,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 17,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "road piece disconnected from all starts"
+      ]
+    },
+    {
+      "level": 17,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 18,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road",
+        "road piece disconnected from all starts",
+        "required start connection missing"
+      ]
+    },
+    {
+      "level": 18,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 19,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road",
+        "road piece disconnected from all starts"
+      ]
+    },
+    {
+      "level": 19,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 20,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 20,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 21,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road",
+        "road piece disconnected from all starts"
+      ]
+    },
+    {
+      "level": 21,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 22,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 22,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 23,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "road piece disconnected from all starts"
+      ]
+    },
+    {
+      "level": 23,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 24,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road",
+        "road piece disconnected from all starts"
+      ]
+    },
+    {
+      "level": 24,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 25,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 25,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 26,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road",
+        "road piece disconnected from all starts"
+      ]
+    },
+    {
+      "level": 26,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 27,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 27,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 28,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road",
+        "road piece disconnected from all starts"
+      ]
+    },
+    {
+      "level": 28,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 29,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 29,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 30,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road",
+        "road piece disconnected from all starts"
+      ]
+    },
+    {
+      "level": 30,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 31,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road",
+        "required start connection missing"
+      ]
+    },
+    {
+      "level": 31,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 32,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 32,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 33,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "road piece disconnected from all starts"
+      ]
+    },
+    {
+      "level": 33,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 34,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road",
+        "road piece disconnected from all starts"
+      ]
+    },
+    {
+      "level": 34,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 35,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road",
+        "road piece disconnected from all starts",
+        "required start connection missing"
+      ]
+    },
+    {
+      "level": 35,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 36,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 36,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 37,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road",
+        "road piece disconnected from all starts"
+      ]
+    },
+    {
+      "level": 37,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 38,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 38,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 39,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road",
+        "road piece disconnected from all starts"
+      ]
+    },
+    {
+      "level": 39,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 40,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 40,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 41,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road",
+        "road piece disconnected from all starts"
+      ]
+    },
+    {
+      "level": 41,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 42,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road",
+        "road piece disconnected from all starts"
+      ]
+    },
+    {
+      "level": 42,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 43,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 43,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 44,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 44,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 45,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road",
+        "road piece disconnected from all starts",
+        "required start connection missing"
+      ]
+    },
+    {
+      "level": 45,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 46,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "road piece disconnected from all starts"
+      ]
+    },
+    {
+      "level": 46,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 47,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road",
+        "road piece disconnected from all starts"
+      ]
+    },
+    {
+      "level": 47,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 48,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road",
+        "required start connection missing"
+      ]
+    },
+    {
+      "level": 48,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 49,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road",
+        "required start connection missing"
+      ]
+    },
+    {
+      "level": 49,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 50,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road",
+        "road piece disconnected from all starts"
+      ]
+    },
+    {
+      "level": 50,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 51,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road",
+        "road piece disconnected from all starts"
+      ]
+    },
+    {
+      "level": 51,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 52,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road",
+        "required start connection missing"
+      ]
+    },
+    {
+      "level": 52,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 53,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road",
+        "required start connection missing"
+      ]
+    },
+    {
+      "level": 53,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 54,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "road piece disconnected from all starts"
+      ]
+    },
+    {
+      "level": 54,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 55,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "road piece disconnected from all starts"
+      ]
+    },
+    {
+      "level": 55,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 56,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road",
+        "required start connection missing"
+      ]
+    },
+    {
+      "level": 56,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 57,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road",
+        "road piece disconnected from all starts"
+      ]
+    },
+    {
+      "level": 57,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 58,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road",
+        "required start connection missing"
+      ]
+    },
+    {
+      "level": 58,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 59,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 59,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 60,
+      "case": "missing_piece",
+      "errors": [
+        "inventory mismatch",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 60,
+      "case": "out_of_bounds",
+      "errors": [
+        "outside board",
+        "incomplete coverage",
+        "door without road"
+      ]
+    },
+    {
+      "level": 1,
+      "case": "door_rotated_away",
+      "errors": [
+        "door without road"
+      ]
+    }
+  ],
+  "connectivityFixtures": {
+    "separate_networks_with_own_starts": "accepted",
+    "required_pair_disconnected": "rejected",
+    "road_network_without_start": "rejected"
+  }
+}

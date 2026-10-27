@@ -1,13 +1,8 @@
-# Local investigation and installed packages
 /work/
+/outputs/
 __pycache__/
 *.py[cod]
 .venv/
 .env
 .env.*
-
-# Keep source files; regenerate game-derived data and visualizations locally.
-/outputs/*
-!/outputs/*.py
-!/outputs/README_solver.md
-!/outputs/requirements*.txt
+/data/solutions/level60_constraint.json

@@ -1,12 +1,14 @@
 """Generate a self-contained HTML gallery and one SVG per solved level."""
+from project_paths import LEVELS, SOLUTIONS, LAYOUTS
 import html
 import json
 from pathlib import Path
 from solve_dolmenjord import geometry
 
-root=Path(__file__).parent
-data=json.loads((root/'dolmenjord_levels.json').read_text(encoding='utf8'))
-results=json.loads((root/'solutions.json').read_text(encoding='utf8'))['results']
+root=LAYOUTS
+root.mkdir(parents=True,exist_ok=True)
+data=json.loads(LEVELS.read_text(encoding='utf8'))
+results=json.loads(SOLUTIONS.read_text(encoding='utf8'))['results']
 catalog={c['name']:c for c in data['catalog']}
 house_colors=['#e7ac61','#f0c584','#d58a51','#e4b79a','#cf9d69','#f0d19f']
 road_colors=['#76b9b0','#90cdc2','#5da69b','#a8d9cc','#70b4bc','#a2ccc7']
@@ -65,7 +67,7 @@ for result in results:
     method='CP-SAT：精确覆盖与道路连通约束' if 'CP-SAT' in str(result.get('strategy','')) else '房屋剪枝搜索 + 道路精确覆盖'
     stattext=(f"候选摆法 {stats.get('candidatePlacements',0)} · 分支 {stats.get('branches',0)} · 冲突 {stats.get('conflicts',0)}" if 'CP-SAT' in method else f"Macro 节点 {stats.get('macroNodes',0)} · 完整房屋方案 {stats.get('completeMacroLayouts',0)} · 道路节点 {stats.get('roadNodes',0)}")
     cards.append(f'''<article class="{'wide' if len(level['gridCells'])>200 else ''}" id="level-{result['level']}"><div class="cardhead"><h2>第 {result['level']:02} 关</h2><span class="pass">已校验</span></div>
-    <p class="meta">{len(level['gridCells'])} 格 · {len(result['placements'])} 件 · {result['seconds']*1000:.2f} ms</p>
+    <p class="meta">{len(level['gridCells'])} 格 · {len(result['placements'])} 件 · successful attempt: {result['seconds']:.6f} s</p>
     <div class="drawing">{image}</div><p class="hint">{('指定连通：'+', '.join(requirements)) if requirements else '道路每个连通区域须接入至少一个起点'}</p>
     <details><summary>摆放坐标与搜索统计</summary><p>{method} · {stattext}</p>
     <table><thead><tr><th>ID</th><th>物件</th><th>锚点 [x,z]</th><th>Unity Y 旋转</th></tr></thead><tbody>{legend}</tbody></table></details></article>''')
